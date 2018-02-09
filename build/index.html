@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrap">
+        <div class="flex_grid">
+          <div class="column1">
+            <svg class="icon icon-Compiler_Logo logo">
+              <use xlink:href="/img/svg/symbol/sprite.svg#Compiler_Logo"></use>
+            </svg>
+            <div class="description">
+              <h1>Быстрый и удобный компилятор<span>.</span></h1>
+              <p>Легко настроить и начать пользоваться</p>
+            </div>
+            <div class="logos"><img src="img/icons/logos.png"></div>
+          </div>
+          <div class="column2">
+            <div class="illustration"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="way1">
+      <div class="way_wrap">
+        <div class="way-without">
+          <p><b>Cпособ 1. </b>Без .htaccess</p><span>01</span>
+        </div>
+        <p class="path">Укажите путь к вашим файлам</p>
+        <p class="settings">Настройка</p>
+        <div class="inp_wrap">
+          <p class="inp_item"><span class="less">style.less</span>
+            <input class="inp" type="text" placeholder="domain.com/css/style.less" id="less">
+          </p>
+          <p class="inp_item"><span class="scss">style.scss</span>
+            <input class="inp" type="text" placeholder="domain.com/css/style.scss" id="sass">
+          </p>
+          <p class="inp_item"><span class="coffee">script.coffee</span>
+            <input class="inp" type="text" placeholder="domain.com/js/script.coffee" id="coffee">
+          </p>
+        </div>
+        <div class="code">
+          <ol type="1" start="1">
+            <li><span># Less</span></li>
+            <li><code>&ltlink rel="stylesheet" type="text/css" <br> href="http://compilim.ru/v2c/less/?from_file=<span class="s_link l_less">domain.com/css/style.less</span>&ssl=off&min=off" /&gt</code></li>
+            <li><span># scss</span></li>
+            <li><code>&ltlink rel="stylesheet" type="text/css" <br> href="http://compiler.v2.axaple.com/c/scss/?from_file=<span class="s_link l_sass">domain.com/css/style.scss</span>&ssl=off&min=off" /&gt</code></li>
+            <li><span># coffee</span></li>
+            <li><code>&ltscript type="text/javascript" <br> src="http://compiler.v2.axaple.com/c/coffee/?from_file=<span class="s_link l_coffee">domain.com/js/script.coffee</span>&ssl=off&min=off"<br>&gt&lt/script&gt</code></li>
+          </ol>
+        </div>
+        <div class="copy"><a class="btn_copy">
+            <svg class="icon icon-Compiler_Icon ">
+              <use xlink:href="/img/svg/symbol/sprite.svg#Compiler_Icon"></use>
+            </svg>Копировать код
+            <div class="tooltip"></div></a></div>
+      </div>
+    </section>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

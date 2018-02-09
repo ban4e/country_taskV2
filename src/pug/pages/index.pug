@@ -1,0 +1,55 @@
+extends ../layout/layout
+block title
+	| Главная страница
+
+block content
+	section.way1
+		.way_wrap
+			.way-without
+				p
+					b Cпособ 1. 
+					| Без .htaccess
+				span 01
+			p.path Укажите путь к вашим файлам
+			p.settings Настройка
+
+			.inp_wrap
+				p.inp_item
+					span.less style.less
+					input(type="text" placeholder="domain.com/css/style.less").inp#less
+				p.inp_item
+					span.scss style.scss
+					input(type="text" placeholder="domain.com/css/style.scss").inp#sass
+				p.inp_item
+					span.coffee script.coffee
+					input(type="text" placeholder="domain.com/js/script.coffee").inp#coffee
+
+			.code
+				ol(type="1" start="1")
+					li
+						span # Less
+					li
+						code &ltlink rel="stylesheet" type="text/css" <br> href="http://compilim.ru/v2c/less/?from_file=
+							span.s_link.l_less domain.com/css/style.less
+							| &ssl=off&min=off" /&gt
+					li
+						span # scss
+					li
+						code &ltlink rel="stylesheet" type="text/css" <br> href="http://compiler.v2.axaple.com/c/scss/?from_file=
+							span.s_link.l_sass domain.com/css/style.scss
+							| &ssl=off&min=off" /&gt
+					li
+						span # coffee
+					li
+						code &ltscript type="text/javascript" <br> src="http://compiler.v2.axaple.com/c/coffee/?from_file=
+							span.s_link.l_coffee domain.com/js/script.coffee
+							| &ssl=off&min=off"<br>&gt&lt/script&gt
+			
+			.copy
+				a.btn_copy
+					+icon('Compiler_Icon')
+					| Копировать код
+					.tooltip
+
+
+
